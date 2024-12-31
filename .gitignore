@@ -135,6 +135,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+my_env/
+
+#configuration
+Task2/credentials.json
+launch.json
+settings.json
 
 # Spyder project settings
 .spyderproject
