@@ -8,7 +8,7 @@ class Base:
 
     def init_driver(self):
         options = Options()
-        options.page_load_strategy = "eager"
+        # options.page_load_strategy = "eager"
         options.add_argument("--disable-gpu")  # Disable GPU acceleration
         # Optional: Disable extensions for stability
         options.add_argument("--disable-extensions")
