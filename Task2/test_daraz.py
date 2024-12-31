@@ -15,23 +15,23 @@ if __name__ == "__main__":
         home_page = HomePage()
         # Log in
         login_page = home_page.click_login()
-        time.sleep(2)
+        # time.sleep(2)
         login_page.enter_login_details(mobile_no, password)
-        time.sleep(2)
+        # time.sleep(2)
         login_page.click_login_btn()
-        time.sleep(2)
+        # time.sleep(2)
         home_page.verify_logged_in("susan sujakhu")
-        time.sleep(2)
+        # time.sleep(2)
         # Search
         search_result_page = home_page.search("JBL")
-        time.sleep(2)
+        # time.sleep(2)
         search_result_page.verify_brand_in_titles("JBL")
-        time.sleep(2)
+        # time.sleep(2)
         # Apply filter
         search_result_page.apply_price_filter(max_price, min_price=0)
-        time.sleep(2)
+        # time.sleep(2)
         products_with_rating_four_plus = search_result_page.check_product_with_rating_four_plus()
-        time.sleep(2)
+        # time.sleep(2)
         # Add to cart
         for product in products_with_rating_four_plus:
             product_page = search_result_page.open_single_product(product)
